@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Gifty" type="GiftyType">
+    <xs:annotation>
+      <xs:documentation>Name:           Anish Aryal
+        Faculty:        Computing
+        Group:          C3
+        LondonMet ID:   20048825</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="firmLogoType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="img" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="signinType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="signin_text"/>
+      <xs:element type="accountType" name="account"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="accepted_cardType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="acceptedcard_type" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="accepts_cardsType">
+    <xs:sequence>
+      <xs:element type="accepted_cardType" name="accepted_card" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="acceptedFirmType">
+    <xs:choice maxOccurs="unbounded" minOccurs="0">
+      <xs:element type="firmLogoType" name="firmLogo"/>
+      <xs:element type="xs:string" name="firmName"/>
+      <xs:element type="xs:string" name="firmAddress"/>
+      <xs:element type="xs:long" name="firmTelephone"/>
+      <xs:element type="xs:string" name="firmType"/>
+      <xs:element type="accepts_cardsType" name="accepts_cards"/>
+      <xs:element type="xs:anyURI" name="firmWebsite"/>
+    </xs:choice>
+    <xs:attribute type="xs:string" name="acceptedStore_type" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="buy_GiftcardsType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="buy_head"/>
+      <xs:element type="buydescriptionType" name="buydescription"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="socialType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="img"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="cardsType">
+    <xs:sequence>
+      <xs:element type="cardimg1Type" name="cardimg1"/>
+      <xs:element type="cardimg2Type" name="cardimg2"/>
+      <xs:element type="cardimg3Type" name="cardimg3"/>
+      <xs:element type="seemoreType" name="seemore"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="top_itemsType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="About"/>
+      <xs:element type="xs:string" name="Ourshops"/>
+      <xs:element type="xs:string" name="Customer_service"/>
+      <xs:element type="xs:string" name="our_service"/>
+      <xs:element type="xs:string" name="track"/>
+      <xs:element type="xs:string" name="insurance"/>
+      <xs:element type="xs:string" name="premium"/>
+      <xs:element type="xs:string" name="membership"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cardTypeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="cardtype" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="typesType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="typetopic"/>
+      <xs:element type="egiftcardType" name="egiftcard"/>
+      <xs:element type="physical_giftcardType" name="physical_giftcard"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="giftCardType">
+    <xs:choice maxOccurs="unbounded" minOccurs="0">
+      <xs:element type="imageofcardType" name="imageofcard"/>
+      <xs:element type="xs:long" name="cardNumber"/>
+      <xs:element type="xs:short" name="cardBalance"/>
+      <xs:element type="xs:date" name="expiryDate"/>
+      <xs:element name="cardType">
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:string">
+              <xs:attribute type="xs:string" name="cardtype" use="optional"/>
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+      <xs:element type="xs:string" name="cardStatus"/>
+      <xs:element type="xs:string" name="discount"/>
+      <xs:element type="xs:byte" name="number_of_uses_left"/>
+      <xs:element type="xs:string" name="issued_from"/>
+    </xs:choice>
+    <xs:attribute type="xs:string" name="cardtype" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="GiftyType">
+    <xs:sequence>
+      <xs:element type="navigationType" name="navigation"/>
+      <xs:element type="popularType" name="popular"/>
+      <xs:element type="productinfoType" name="productinfo"/>
+      <xs:element type="howitworksType" name="howitworks"/>
+      <xs:element type="xs:string" name="giftTopic"/>
+      <xs:element type="giftcardsType" name="giftcards"/>
+      <xs:element type="buy_GiftcardsType" name="buy_Giftcards"/>
+      <xs:element type="xs:string" name="our_ownstore"/>
+      <xs:element type="our_storesType" name="our_stores"/>
+      <xs:element type="parteneredType" name="partenered"/>
+      <xs:element type="storeType" name="store"/>
+      <xs:element type="footerType" name="footer"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cartType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="img"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="footerType">
+    <xs:sequence>
+      <xs:element type="firstcolType" name="firstcol"/>
+      <xs:element type="seccolType" name="seccol"/>
+      <xs:element type="xs:string" name="thirdcol"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="our_storesType">
+    <xs:sequence>
+      <xs:element type="storeinfoType" name="storeinfo" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="infosectionType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="infotopic"/>
+      <xs:element type="xs:string" name="productpic"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="logoType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="img"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="navigationType">
+    <xs:sequence>
+      <xs:element type="topType" name="top"/>
+      <xs:element type="downType" name="down"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cardimg3Type">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="img"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="howitworksType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="howitworkshead"/>
+      <xs:element type="howdescriptionType" name="howdescription"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="likesType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="img"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="topType">
+    <xs:sequence>
+      <xs:element type="top_itemsType" name="top_items"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buydescriptionType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="line1"/>
+      <xs:element type="xs:string" name="line2"/>
+      <xs:element type="xs:string" name="line3"/>
+      <xs:element type="xs:string" name="line4"/>
+      <xs:element type="xs:string" name="line5"/>
+      <xs:element type="xs:string" name="line6"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cardimg2Type">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="img"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="storeType">
+    <xs:sequence>
+      <xs:element type="acceptedFirmType" name="acceptedFirm" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="searchType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="img"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="popularType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="popularhead"/>
+      <xs:element type="cardsType" name="cards"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="giftcardsType">
+    <xs:sequence>
+      <xs:element type="giftCardType" name="giftCard" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="accountType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="img"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="parteneredType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="parteneredtopic"/>
+      <xs:element type="xs:string" name="partnerdescription"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="seemoreType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="img"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="downType">
+    <xs:sequence>
+      <xs:element type="logoType" name="logo"/>
+      <xs:element type="searchType" name="search"/>
+      <xs:element type="signinType" name="signin"/>
+      <xs:element type="likesType" name="likes"/>
+      <xs:element type="cartType" name="cart"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="physical_giftcardType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="type2"/>
+      <xs:element type="xs:string" name="description2"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cardimg1Type">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="img"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="firstcolType">
+    <xs:sequence>
+      <xs:element type="footer_logoType" name="footer_logo"/>
+      <xs:element type="socialType" name="social"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="productinfoType">
+    <xs:sequence>
+      <xs:element type="infosectionType" name="infosection"/>
+      <xs:element type="typesType" name="types"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="linkssType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="faboutus"/>
+      <xs:element type="xs:string" name="fourshops"/>
+      <xs:element type="xs:string" name="fcontactus"/>
+      <xs:element type="xs:string" name="fcustomer"/>
+      <xs:element type="xs:string" name="finsurance"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="seccolType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="quicklinks"/>
+      <xs:element type="linkssType" name="linkss"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="imageofcardType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="img" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="howdescriptionType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="line1"/>
+      <xs:element type="xs:string" name="line2"/>
+      <xs:element type="xs:string" name="line3"/>
+      <xs:element type="xs:string" name="line4"/>
+      <xs:element type="xs:string" name="line5"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="storeinfoType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="name"/>
+      <xs:element type="xs:string" name="address"/>
+      <xs:element type="xs:string" name="telephone" minOccurs="0"/>
+      <xs:element type="xs:anyURI" name="website" minOccurs="0"/>
+      <xs:element type="xs:string" name="type"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="store_type" use="optional"/>
+    <xs:attribute type="xs:byte" name="store_id" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="footer_logoType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="img"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="egiftcardType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="type1"/>
+      <xs:element type="xs:string" name="description1"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

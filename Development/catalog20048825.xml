@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet href="catalog20048825.css"?>
+
+
+
+<!--    Name:           Anish Aryal
+        Faculty:        Computing
+        Group:          C3
+        LondonMet ID:   20048825    -->
+
+
+<Gifty  xsi:noNamespaceSchemaLocation="catalog20048825.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <navigation>
+        <top>
+            <top_items>
+                <About>About us</About>
+                <Ourshops>Our shops</Ourshops>
+                <Customer_service>Customer Service</Customer_service>
+                <our_service>Our Services</our_service>
+                <track>Track Order</track>
+                <insurance>Insurance</insurance>
+                <premium>Premium Cards</premium>
+                <membership>Membership</membership>
+            </top_items>
+        </top>
+        <down>
+            <logo img="giftylogo"/>
+            <search img="search"/>
+            <signin>
+                <signin_text>Sign in</signin_text>
+                <account img="account"/>
+            </signin>
+            <likes img="Heart"/>
+            <cart img="Buy"/>
+    
+        </down>
+    </navigation>
+    <popular>
+            <popularhead>Popular Products</popularhead>
+            <cards>
+                <cardimg1 img="Card1"/>
+                <cardimg2 img="Card2"/>
+                <cardimg3 img="Card3"/>
+                <seemore img="seemore"/>
+            </cards>
+    </popular>
+
+    <productinfo>
+        <infosection>
+            <infotopic>Information about Products.</infotopic>
+            <productpic/>
+        </infosection>
+
+ 
+        <types>
+            <typetopic>Types of Cards we have</typetopic>
+            <egiftcard>
+                <type1>1. Online / E-Gift Cards</type1>
+                <description1> <![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Erat arcu tincidunt magna tellus semper arcu fermentum suspendisse. Pharetra sit pretium, purus, pulvinar. Orci sapien sed fringilla risus. Dolor egestas morbi ut ornare ullamcorper diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Erat arcu tincidunt magna tellus semper arcu fermentum suspendisse. Pharetra sit pretium, purus, pulvinar. ]]></description1>
+            </egiftcard>
+            <physical_giftcard>
+                <type2>2. Physical Gift Cards</type2>
+                <description2><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Erat arcu tincidunt magna tellus semper arcu fermentum suspendisse. Pharetra sit pretium, purus, pulvinar. Orci sapien sed fringilla risus. Dolor egestas morbi ut ornare ullamcorper diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Erat arcu tincidunt magna tellus semper arcu fermentum suspendisse. Pharetra sit pretium, purus, pulvinar. ]]></description2>
+            </physical_giftcard>
+        </types>
+    </productinfo>
+
+    <howitworks>
+        <howitworkshead>How it works ?</howitworkshead>
+        <howdescription>
+            <line1> <![CDATA[  Enter one set of codes at a time for multiple gift cards.]]></line1>
+            <line2> <![CDATA[  Your order balance will be automatically adjusted with credit to the value of the gift card after you enter the gift card numbers.]]></line2>
+            <line3> <![CDATA[ If you have a balance to pay, you can do so using a debit or credit card as usual.]]></line3>
+            <line4> <![CDATA[ If the total order value is less than the value of the gift card or e-gift card, any remaining balance will be credited to your account and can be used on future purchases if the card has not expired. ]]> </line4>
+            <line5> <![CDATA[ Keep your gift card or e-gift card email if you want to utilize the remaining gift card balance at a later time. ]]> </line5>
+        </howdescription>
+    </howitworks>
+
+   <giftTopic> <![CDATA[Some sample of cards we have for you.]]></giftTopic>
+    <giftcards>
+        <giftCard cardtype="Physical">
+            <imageofcard img="img1"></imageofcard>
+            <cardNumber>5294243647803468</cardNumber>
+            <cardBalance>100</cardBalance>    
+            <expiryDate> 2021-01-01</expiryDate>
+            <cardType >Physical</cardType>
+            <cardStatus>Active</cardStatus>
+            <discount>25%</discount>
+            <number_of_uses_left>2</number_of_uses_left>
+            <issued_from>GiftyLondon</issued_from>
+        </giftCard>
+        <giftCard cardtype="Digital">
+            <imageofcard img="img2"></imageofcard>
+            <cardNumber>5282345678901389</cardNumber>
+            <cardBalance>500</cardBalance>
+            <expiryDate>2021-01-01</expiryDate>
+            <cardType >Digital</cardType>
+            <cardStatus>Active</cardStatus>
+            <number_of_uses_left>2</number_of_uses_left>
+            <issued_from>GiftyChitwan</issued_from>
+        </giftCard>
+        <giftCard cardtype="Digital" >
+            <imageofcard img="img3"></imageofcard>
+            <cardNumber>5294243647802568</cardNumber>
+            <expiryDate>2021-01-01</expiryDate>
+            <cardType >Digital</cardType>
+            <cardStatus>Active</cardStatus>
+            <discount>15%</discount>
+            <number_of_uses_left>2</number_of_uses_left>
+            <issued_from>GiftyKtm</issued_from>
+        </giftCard>
+        <giftCard cardtype="Physical">
+            <imageofcard img="img4"></imageofcard>
+            <cardNumber>5294243647802478</cardNumber>
+            <cardBalance>100</cardBalance>
+            <expiryDate>2021-01-01</expiryDate>
+            <cardType >Physical</cardType>
+            <cardStatus>inactive</cardStatus>
+            <discount>5%</discount>
+            <number_of_uses_left>2</number_of_uses_left>
+            <issued_from>GiftyLondon</issued_from>
+        </giftCard>
+        <giftCard cardtype="Digital" >
+            <imageofcard img="img5"></imageofcard>
+            <cardNumber>5294243647802469</cardNumber>
+            <cardBalance>100</cardBalance>
+            <expiryDate>2021-01-01</expiryDate>
+            <cardType >Digital</cardType>
+            <cardStatus>Active</cardStatus>
+            <discount>20%</discount>
+            <number_of_uses_left>2</number_of_uses_left>
+            <issued_from>Gifty,London</issued_from>
+        </giftCard>
+        <giftCard cardtype="Physical">
+            <imageofcard img="img6"></imageofcard>
+            <cardNumber>6282345678901289</cardNumber>
+            <cardBalance>100</cardBalance>
+            <expiryDate>2021-01-01</expiryDate>
+            <cardType >Physical</cardType>
+            <cardStatus>Active</cardStatus>
+            <number_of_uses_left>2</number_of_uses_left>
+            <issued_from>GiftyLondon</issued_from>
+        </giftCard>
+        <giftCard cardtype="Physical" >
+            <imageofcard img="img7"></imageofcard>
+            <cardNumber>5394243647802468</cardNumber>
+            <expiryDate>2021-01-01</expiryDate>
+            <cardType >Physical</cardType>
+            <cardStatus>Active</cardStatus>
+            <discount>30%</discount>
+            <number_of_uses_left>2</number_of_uses_left>
+            <issued_from>GiftyUSA</issued_from>
+        </giftCard>
+        <giftCard cardtype="Digital">
+            <imageofcard img="img8"></imageofcard>
+            <cardNumber>5204243647802468</cardNumber>
+            <cardBalance>100</cardBalance>
+            <expiryDate>2021-01-01</expiryDate>
+            <cardType >Digital</cardType>
+            <cardStatus>inactive</cardStatus>
+            <discount>15%</discount>
+            <number_of_uses_left>2</number_of_uses_left>
+            <issued_from>GiftyLondon</issued_from>
+        </giftCard>
+        <giftCard cardtype="Digital" >
+            <imageofcard img="img9"></imageofcard>
+            <cardNumber>5294243657802468</cardNumber>
+            <cardBalance>100</cardBalance>
+            <expiryDate>2021-01-01</expiryDate>
+            <cardType >Digital</cardType>
+            <cardStatus>Active</cardStatus>
+            <discount>25%</discount> 
+            <number_of_uses_left>2</number_of_uses_left>
+            <issued_from>GiftyPokhara</issued_from>
+        </giftCard>
+        <giftCard >
+            <imageofcard img="img10"></imageofcard>
+            <cardNumber>5282345688901289</cardNumber>
+            <expiryDate>2021-01-01</expiryDate>
+            <cardType cardtype="Physical">Physical</cardType>
+            <cardStatus>Active</cardStatus>
+            <cardBalance>200</cardBalance>
+            <number_of_uses_left>2</number_of_uses_left>
+            <issued_from>GiftyParis</issued_from>
+        </giftCard>
+        <giftCard >
+            <imageofcard img="img11"></imageofcard>
+            <cardNumber>5294243647902468</cardNumber>
+            <cardBalance>300</cardBalance>
+            <expiryDate>2021-01-01</expiryDate>
+            <cardType cardtype="Digital">Digital</cardType>
+            <cardStatus>Active</cardStatus>
+            <number_of_uses_left>2</number_of_uses_left>
+            <issued_from>GiftyKtm</issued_from>
+        </giftCard>
+        <giftCard >
+            <imageofcard img="img12"></imageofcard>
+            <cardNumber>5294243647812468</cardNumber>
+            <discount>20%</discount>
+            <expiryDate>2021-01-01</expiryDate>
+            <cardType cardtype="Physical">Physical</cardType>
+            <cardStatus>Active</cardStatus>
+            <number_of_uses_left>2</number_of_uses_left>
+            <issued_from>GiftyLondon</issued_from>
+        </giftCard>
+    </giftcards>
+
+    <buy_Giftcards >
+        <buy_head>How to Buy and How to use ?</buy_head>
+        <buydescription>
+            <line1> <![CDATA[ Gift cards are available for purchase on our website and in our physical stores. you can also Call 218957982 to purchase gift cards and experience gift cards over the phone ]]> </line1>
+            <line2> <![CDATA[On the website, shop as usual, then proceed to the checkout. You'll be prompted to input two codes for each voucher you want to use at checkout.]]></line2>
+            <line3> <![CDATA[ the 10-digit serial number on the bottom right of the voucher]]></line3>
+            <line4> <![CDATA[ the 7-character online security code underneath the scratch-off panel on back of the card]]></line4>
+            <line5> <![CDATA[ for multiple gift vouchers, enter one set of voucher codes at a time]]></line5>
+             <line6> <![CDATA[ After entering in the gift voucher codes, your order will be automatically updated with credit to the value of the voucher(s). If there's any balance to pay, you can use a debit or credit card in the usual way.Gift vouchers have no expiry date; please note this is different to our gift cards which expire after 2 years.Gift vouchers can only be used once, and they cannot be used in our shops once the holographic panel has been scratched off. ]]> </line6>
+        </buydescription>
+    </buy_Giftcards>
+
+    <our_ownstore>Our Stores and Outlets</our_ownstore>
+    <our_stores>
+        <storeinfo store_type="Main">
+            <name>GiftyLondon</name>
+            <address>London</address>
+            <telephone>09-444444</telephone>
+            <website>www.giifty.com</website>
+            <type>Main store</type>
+        </storeinfo>
+        <storeinfo store_type="Branch" store_id="1">
+            <name>GiftyChitwan</name>
+            <address>Narayanghat</address>
+            <telephone>07-444447</telephone>
+            <type>Outlet</type>
+        </storeinfo>
+        <storeinfo store_type="Branch" store_id="2">
+            <name>GiftyKtm</name>
+            <address>kathmandu</address>
+            <telephone>07-444446</telephone>
+            <website>www.gifty.com/ktm</website>
+            <type>Outlet</type>
+        </storeinfo>
+        <storeinfo store_type="Branch" store_id="3">
+            <name>GiftyPokhara</name>
+            <address>Pokhara</address>
+            <website>www.gifty.com/pokhara</website>
+            <type>Online</type>
+        </storeinfo>
+        <storeinfo store_type="Branch" store_id="3">
+            <name>GiftyUSA</name>
+            <address>United state</address>
+            <website>www.gifty.com/usa</website>
+            <type>Outlet</type>
+        </storeinfo>
+        <storeinfo store_type="Branch" store_id="3">
+            <name>GiftyParis</name>
+            <address>Paris</address>
+            <telephone>07-444445</telephone>
+            <website>www.gifty.com/paris</website>
+            <type>Online</type>
+        </storeinfo>
+    </our_stores>
+
+    <partenered>
+        <parteneredtopic>Some examples of places where you can use cards </parteneredtopic>
+        <partnerdescription> <![CDATA[ Our cards can be used in various places. As we have partenered with multiple brands and services. Some of the places where cards can be used are: ]]></partnerdescription>
+    </partenered>
+    <store>
+        <acceptedFirm acceptedStore_type="Physical">
+            <firmLogo img="bigmartlogo"></firmLogo>
+            <firmName>BigMart</firmName>
+            <firmAddress>1 Infinite Loop, Cupertino, CA 95014</firmAddress>
+            <firmTelephone>2879654248</firmTelephone>
+            <firmType>Grocery Store</firmType>
+            <accepts_cards>
+                <accepted_card acceptedcard_type="Physical">Physical</accepted_card>
+            </accepts_cards>
+        </acceptedFirm>
+        <acceptedFirm acceptedStore_type="Physical">
+            <firmLogo img="walmartlogo"></firmLogo>
+            <firmName>WalMart</firmName>
+            <firmAddress>1 Infinite Loop, Cupertino, CA 95014</firmAddress>
+            <firmType>Grocery Store</firmType>
+            <firmTelephone>6832495239</firmTelephone>
+            <firmWebsite>www.walmart.com</firmWebsite>
+            <accepts_cards>
+                <accepted_card acceptedcard_type="Physical">Physical</accepted_card>
+            </accepts_cards>
+        </acceptedFirm>
+        
+        <acceptedFirm acceptedStore_type="Online">
+            <firmLogo img="applelogo"></firmLogo>
+            <firmName>Apple</firmName>
+            <firmAddress>1 Infinite Loop, Cupertino, CA 95014</firmAddress>
+            <firmType>Electronic Store Website</firmType>
+            <firmTelephone>23456892</firmTelephone>
+            <firmWebsite>www.apple.com</firmWebsite>
+            <accepts_cards >
+                <accepted_card acceptedcard_type="Digital">Digital</accepted_card>
+                
+            </accepts_cards>
+        </acceptedFirm>
+        <acceptedFirm acceptedStore_type="Physical">
+            <firmLogo img="samsunglogo"></firmLogo>
+            <firmName>Samsung</firmName>
+            <firmAddress>1 Infinite Loop, Cupertino, CA 95014</firmAddress>
+            <firmType>Electronic Store</firmType>
+            <firmTelephone>895743234</firmTelephone>
+            <firmWebsite>www.samsung.com</firmWebsite>
+            <accepts_cards >
+                <accepted_card acceptedcard_type="Digital">Digital</accepted_card>
+                <accepted_card acceptedcard_type="Physical">Physical</accepted_card>
+                
+            </accepts_cards>
+        </acceptedFirm>
+        <acceptedFirm acceptedStore_type="Physical">
+            <firmLogo img="kfclogo"></firmLogo>
+            <firmName>KFC</firmName>
+            <firmAddress>1 Infinite Loop, Cupertino, CA 95014</firmAddress>
+            <firmType>Resturant</firmType>
+            <firmTelephone>879263452</firmTelephone>
+            <accepts_cards >
+                <accepted_card acceptedcard_type="Digital">Digital</accepted_card>
+                <accepted_card acceptedcard_type="Physical">Physical</accepted_card>
+                
+            </accepts_cards>
+        </acceptedFirm>
+        <acceptedFirm acceptedStore_type="Online">
+            <firmLogo img="netflixlogo"></firmLogo>
+            <firmName>Netflix</firmName>
+            <firmAddress>1 Infinite Loop, Cupertino, CA 95014</firmAddress>
+            <firmType>Streaming</firmType>
+            <firmTelephone>7682345923</firmTelephone>
+            <firmWebsite>www.Netflix.com</firmWebsite>
+            <accepts_cards >
+                <accepted_card acceptedcard_type="Digital">Digital</accepted_card>
+                
+            </accepts_cards>
+        </acceptedFirm>
+        <acceptedFirm acceptedStore_type="Online">
+            <firmLogo img="amazonlogo"></firmLogo>
+            <firmName>Amazon</firmName>
+            <firmAddress>1 Infinite Loop, Cupertino, CA 95014</firmAddress>
+            <firmType>E-commerce</firmType>
+            <firmTelephone>7346859833</firmTelephone>
+            <firmWebsite>www.amazon.com</firmWebsite>
+            <accepts_cards >
+                <accepted_card acceptedcard_type="Digital">Digital</accepted_card>
+                
+            </accepts_cards>
+        </acceptedFirm>
+        <acceptedFirm acceptedStore_type="Physical">
+            <firmLogo img="pizzahutlogo"></firmLogo>
+            <firmName>Pizzahut</firmName>
+            <firmAddress>1 Infinite Loop, Cupertino, CA 95014</firmAddress>
+            <firmType>Resturant</firmType>
+            <firmTelephone>83945983453</firmTelephone>
+            <firmWebsite>www.pizzahut.com</firmWebsite>
+            <accepts_cards >
+                <accepted_card acceptedcard_type="Physical">Physical</accepted_card>
+            </accepts_cards>
+        </acceptedFirm>
+        <acceptedFirm acceptedStore_type="Physical">
+            <firmLogo img="mcdonaldslogo"></firmLogo>
+            <firmName>McDonalds</firmName>
+            <firmAddress>1 Infinite Loop, Cupertino, CA 95014</firmAddress>
+            <firmType>Resturant</firmType>
+            <firmTelephone>8934572348</firmTelephone>
+            <firmWebsite>www.mcdonalds.com</firmWebsite>
+            <accepts_cards >
+                <accepted_card acceptedcard_type="Digital">Digital</accepted_card>
+                <accepted_card acceptedcard_type="Physical">Physical</accepted_card>
+                
+            </accepts_cards>
+        </acceptedFirm>
+        <acceptedFirm acceptedStore_type="Online">
+            <firmLogo img="ebaylogo"></firmLogo>
+            <firmName>Ebay</firmName>
+            <firmAddress>1 Infinite Loop, Cupertino, CA 95014</firmAddress>
+            <firmType>E-commerce</firmType>
+            <firmTelephone>4398527349</firmTelephone>
+            <firmWebsite>www.ebay.com</firmWebsite>
+            <accepts_cards >
+                <accepted_card acceptedcard_type="Digital">Digital</accepted_card>
+                
+            </accepts_cards>
+        </acceptedFirm>
+</store>
+<footer>
+    <firstcol>
+        <footer_logo img="footerlogo"></footer_logo>
+        <social img="socialimg"></social>
+    </firstcol>
+   <seccol>
+        <quicklinks>Quick Links</quicklinks>
+        <linkss>
+            <faboutus>About Us</faboutus>
+            <fourshops>Our Shops</fourshops>
+            <fcontactus>Contact us</fcontactus>
+            <fcustomer>Customer Service</fcustomer>  
+            <finsurance>Insurance</finsurance>  
+        </linkss>
+   </seccol>
+   <thirdcol>
+       © 2020 All rights reserved by Gifty.
+   </thirdcol>
+
+</footer>
+
+
+</Gifty>
